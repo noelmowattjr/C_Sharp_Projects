@@ -39,7 +39,23 @@ namespace RunMiles
                         double miles = double.Parse(entry);
 
                         //--Give user feedback on entered miles
-
+                        if(miles <= 0)
+                        {
+                            Console.WriteLine("{0} is unacceptable!", miles);
+                            continue;
+                        } else if (miles <= 3)
+                        {
+                            Console.WriteLine("{0} is a start! Keep it going now!", miles);
+                        } else if (miles <= 6)
+                        {
+                            Console.WriteLine("Impressive!");
+                        } else if (miles <= 9)
+                        {
+                            Console.WriteLine("Wow! Are you training for a Marathon?");
+                        } else
+                        {
+                            Console.WriteLine("Now you're just showing off!");
+                        }
 
                         //--Add miles entered to miles total
                         milesTotal = milesTotal + miles;
