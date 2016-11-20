@@ -15,25 +15,46 @@ namespace RunMiles
 
             // Description: Program keeps track of miles user runs and adds it to total amount
 
+            double milesTotal = 0;
             bool keepItGoing = true;
 
             while (keepItGoing)
             {
                 //--Prompt user for miles ran
-                Console.Write("Miles ran today? ");
+                Console.Write("Enter miles ran today or enter \"QUIT\" to exit: ");
                 string entry = Console.ReadLine();
 
-                //--Handle the user's entry for correctness and error if number not entered
-                try
+                if (entry.ToLower() == "quit")
                 {
-                    double milesEntered = double.Parse(entry);
+                    //--while loop ends - Program ends
+                    keepItGoing = false;
+                    continue;
                 }
-                catch(FormatException)
+                else
                 {
-                    Console.Write("Invalid!");
-                    continue;     //--starts loop over from beginning
+                    //--Program continues--//
+
+                    try
+                    {
+                        double miles = double.Parse(entry);
+
+                        //--Give user feedback on entered miles
+
+
+                        //--Add miles entered to miles total
+                        milesTotal = milesTotal + miles;
+
+                        Console.WriteLine("You've ran a total of {0} miles today", milesTotal);
+                    }
+                    catch (FormatException)
+                    {
+                        Console.Write("Invalid!");
+                        continue;     //--starts loop over from beginning
+                    }
                 }
             }
+            //--Goodbye message
+            Console.WriteLine("Goodbye!");
         }
     }
 }
