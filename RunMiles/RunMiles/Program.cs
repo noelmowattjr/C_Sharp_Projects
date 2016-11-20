@@ -28,7 +28,7 @@ namespace RunMiles
                 {
                     //--while loop ends - Program ends
                     keepItGoing = false;
-                    continue;
+                    //--continue;
                 }
                 else
                 {
