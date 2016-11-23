@@ -21,7 +21,7 @@ namespace RunMiles
             while (keepItGoing)
             {
                 //--Prompt user for miles ran
-                Console.Write("Enter miles ran today or enter \"QUIT\" to exit: ");
+                Console.Write("\r\nEnter miles ran today or enter \"QUIT\" to exit: ");
                 string entry = Console.ReadLine();
 
                 if (entry.ToLower() == "quit")
@@ -64,7 +64,7 @@ namespace RunMiles
                     }
                     catch (FormatException)
                     {
-                        Console.Write("Invalid!");
+                        Console.Write ("Invalid entry!");
                         continue;     //--starts loop over from beginning
                     }
                 }
