@@ -6,4 +6,4 @@ continue - statement<br />
 try{}catch - statement
 
 ### Inheritance
-Learning how to use inheritance in C#
+Implementing the practice of class inheritance in C#
