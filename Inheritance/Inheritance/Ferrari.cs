@@ -11,12 +11,14 @@ namespace Inheritance
         //--fields unique to Ferrari
         public readonly int Speeds;
         public readonly string Color;
+        public readonly string Model;
 
         //--Subclass Ferrari inherits from Car class
-        public Ferrari(int numOfWheels, int numOfSeats, int speeds, string color) : base(numOfWheels, numOfSeats)
+        public Ferrari(int numOfWheels, int numOfSeats, int speeds, string color, string model) : base(numOfWheels, numOfSeats)
         {
             Speeds = speeds;
             Color = color;
+            Model = model;
         }
     }
 }
