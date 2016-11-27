@@ -5,3 +5,5 @@ Things I am learning with C#
 continue - statement<br />
 try{}catch - statement
 
+### Inheritance
+Learning how to use inheritance in C#
