@@ -14,13 +14,31 @@ namespace Playground
                 Program - Playground
                 */
 
-            int a = 3;
-            int b = 2;
+            Console.Write("Enter number between -1 and 21: ");
+            int v;
 
-            double c = 3.5;
-            double y = a / b * c;
+            
+            try
+            {
+                //--if number, converts t int and stores user's response
+                v = int.Parse(Console.ReadLine());
+                
 
-            Console.WriteLine(y);
+                //--throw exception if number is out of range
+                if (v < 0 || v > 20)
+                {
+                    throw new Exception();
+                }
+                else
+                {
+                    Console.WriteLine(string.Format("You entered {0} Awesome!", v));
+                }
+            }
+            catch (Exception)
+            {
+                //--v = int.Parse(Console.ReadLine());
+                Console.WriteLine("out of range! Enter a number!");
+            }
         }
     }
 }
