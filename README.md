@@ -6,7 +6,8 @@ continue - statement<br />
 try{}catch - statement
 
 ### Inheritance
-Implementing the practice of class inheritance in C#
+Implementing the practice of class inheritance in C#<br />
+*Inheritance Project DELETED*
 
 ### Playground
 Throwing System.Exceptions using<br />
