@@ -8,6 +8,17 @@ namespace MansBestFriend
 {
     class Cat : Animal
     {
-        private int catYears;
+        private bool IsKitten;
+
+        public Cat(bool isKitten) : base(typee: "?", age: 0, name: "?", gender: '?')
+        {
+            IsKitten = isKitten;
+        }
+
+        public bool Kitten_GS
+        {
+            get { return IsKitten; }
+            set { IsKitten = value; }
+        }
     }
 }
