@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MansBestFriend
 {
-    class Cat
+    class Cat : Animal
     {
+        private int catYears;
     }
 }
