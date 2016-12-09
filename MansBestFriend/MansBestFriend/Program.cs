@@ -14,6 +14,15 @@ namespace MansBestFriend
                 Date: 12 - 09 - 2016
                 Project: Man's Best Friend  
                 Brief Desc: User chooses a one of three animals for a pet - Monkey, Cat, or Dog*/
+
+            //--Choose your Pet
+            //--Name your Pet
+            //--Choose three times of the day you will feed your Pet
+            //--What time of day will you bathe your Pet?
+            //--Time of day you will walk your Pet?
+            //--Set a bedtime for Pet
+            //--Program settings saved  - Run Program!
+
         }
     }
 }
