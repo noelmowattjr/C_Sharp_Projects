@@ -15,7 +15,16 @@ namespace MansBestFriend
                 Project: Man's Best Friend  
                 Brief Desc: User chooses a one of three animals for a pet - Monkey, Cat, or Dog*/
 
+            //--Instantiate Pet Class
+            Dog dog = new Dog(isTrained: true);
+            Cat cat = new Cat(isKitten: true);
+            Monkey monkey = new Monkey(isCircMonkey: true);
+
             //--Choose your Pet
+            Console.WriteLine("");
+            Console.Write("Choose your Pet: ");
+
+
             //--Name your Pet
             //--Choose three times of the day you will feed your Pet
             //--What time of day will you bathe your Pet?
