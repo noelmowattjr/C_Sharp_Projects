@@ -7,3 +7,7 @@ try{}catch - statement
 
 ### Inheritance
 Implementing the practice of class inheritance in C#
+
+### Playground
+Throwing System.Exceptions using<br />
+try{} catch(){} statement
