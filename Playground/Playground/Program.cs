@@ -14,10 +14,26 @@ namespace Playground
                 Program - Playground
                 */
 
-            Console.Write("Enter number between -1 and 21: ");
-            int v;
-
+            Console.Write("Enter number between 0 and 20: ");
+            int value = int.Parse(Console.ReadLine());
             
+            if (value < 0 || value > 20)
+            {
+                throw new System.Exception();
+            }
+            
+            try
+            {
+                Console.WriteLine(string.Format("You entered {0}", value));
+            }
+            catch (System.Exception)
+            {
+                Console.Write("Out of range. Enter a number: ");
+                value = int.Parse(Console.ReadLine());
+            }
+            
+
+            /*
             try
             {
                 //--if number, converts t int and stores user's response
@@ -39,6 +55,7 @@ namespace Playground
                 //--v = int.Parse(Console.ReadLine());
                 Console.WriteLine("out of range! Enter a number!");
             }
+            */
         }
     }
 }
