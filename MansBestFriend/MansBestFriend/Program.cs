@@ -16,13 +16,10 @@ namespace MansBestFriend
                 Brief Desc: User chooses a one of three animals for a pet - Monkey, Cat, or Dog*/
 
             bool keepPlaying = true;
-            //keepPlaying = false;
 
             //--Instantiate Pet Class
             Dog dog = new Dog(isTrained: true); Cat cat = new Cat(isKitten: true); Monkey monkey = new Monkey(isCircMonkey: true);
  
-            
-            
             while (keepPlaying)
             {
                 //--Name Prompt
@@ -31,19 +28,37 @@ namespace MansBestFriend
 
                 string greet = GoodDay(name);  //--Greeting according to time of day
 
-                //--Greet & and welcome user
-                Console.WriteLine();
-                keepPlaying = false;
-                //--Choose your Pet
-                
+                //--Continue Program or Exit
+                Console.Write("Now to contnue enter \"Yes\" or to exit, type \"No\": ");
+                string yesno = Console.ReadLine();
 
-                //--Name your Pet
-                //--Choose three times of the day you will feed your Pet
-                //--What time of day will you bathe your Pet?
-                //--Time of day you will walk your Pet?
-                //--Set a bedtime for Pet
-                //--Program settings saved  - Run Program!
+                //--Validation for Yes or No entries
+                while (yesno.ToLower() != "yes" && yesno.ToLower() != "no"){ Console.Write("INVALID ENTRY!\r\nOnly enter (YES/NO): "); yesno = Console.ReadLine();}
+
+                if (yesno.ToLower() == "yes")
+                {
+                    //--CONTINUE
+
+                    //--Choose your Pet
+                    Console.Write("Dog - Cat - Monkey\r\nPick a pet: ");
+                    string petChoice = Console.ReadLine();
+
+
+                    //--Name your Pet
+                    //--Choose three times of the day you will feed your Pet
+                    //--What time of day will you bathe your Pet?
+                    //--Time of day you will walk your Pet?
+                    //--Set a bedtime for Pet
+                    //--Program settings saved  - Run Program!
+
+                }
+                else if (yesno.ToLower() == "no")
+                {
+                    //--EXIT
+                    break;
+                }
             }
+            Console.WriteLine("Goodbye!... =(");
 
 
 
