@@ -9,5 +9,6 @@ namespace MansBestFriend
     class Animal
     {
         private string type;
+        private int age;
     }
 }
