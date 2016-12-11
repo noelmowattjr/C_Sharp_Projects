@@ -3,4 +3,4 @@ Man’s Best Friend
 Sunday, 12-11-2016
 	-Added some validations using while loops for user choice of pet.
 	-Added 3 conditions according to user’s choice of pet (Dog-Cat-Monkey).
-	-Stored user’s response for pet name in class name field from Animal class 		(inherited)
+	-Stored user’s response for petname in class name field from Animal class
