@@ -43,8 +43,30 @@ namespace MansBestFriend
                     Console.Write("Dog - Cat - Monkey\r\nPick a pet: ");
                     string petChoice = Console.ReadLine();
 
+                    //--Pet Choice Validation
+                    while (petChoice.ToLower() != "dog" && petChoice.ToLower() != "cat" && petChoice.ToLower() != "monkey"){
+                        Console.Write("Error!\r\nPlease choose one of the following for a pet (Dog/Cat/Monkey): "); petChoice = Console.ReadLine();}
+                    
+                    //----------------------Conditions based on animal chosen---------------------------//
+                    if (petChoice.ToLower() == "dog")
+                    {
+                        //--Name your Pet
+                        Console.Write("You chose a {0} for a Pet!\r\nNow give your pet a name: ", petChoice);
+                        dog.Name_GS = Console.ReadLine();
+                    }
+                    else if (petChoice.ToLower() == "cat")
+                    {
+                        //--Name your Pet
+                        Console.Write("You chose a {0} for a Pet!\r\nNow give your pet a name: ", petChoice);
+                        cat.Name_GS = Console.ReadLine();
+                    }
+                    else if (petChoice == "monkey")
+                    {
+                        //--Name your Pet
+                        Console.Write("You chose a {0} for a Pet!\r\nNow give your pet a name: ", petChoice);
+                        monkey.Name_GS = Console.ReadLine();
+                    }
 
-                    //--Name your Pet
                     //--Choose three times of the day you will feed your Pet
                     //--What time of day will you bathe your Pet?
                     //--Time of day you will walk your Pet?
