@@ -22,7 +22,7 @@ namespace MansBestFriend
  
             while (keepPlaying)
             {
-                //--Name Prompt
+                //--MARK I - Name Prompt
                 Console.Write("Enter your name: ");
                 string name = Console.ReadLine();
 
@@ -39,7 +39,7 @@ namespace MansBestFriend
                 {
                     //--CONTINUE
 
-                    //--Choose your Pet
+                    //--MARK II - Choose your Pet
                     Console.Write("Dog - Cat - Monkey\r\nPick a pet: ");
                     string petChoice = Console.ReadLine();
 
@@ -67,11 +67,12 @@ namespace MansBestFriend
                         monkey.Name_GS = Console.ReadLine();
                     }
 
-                    //--Choose three times of the day you will feed your Pet
-                    //--What time of day will you bathe your Pet?
-                    //--Time of day you will walk your Pet?
-                    //--Set a bedtime for Pet
-                    //--Program settings saved  - Run Program!
+                    //--MARK III - Choose three times of the day you will feed your Pet
+                    //--MARK IV - What time of day will you bathe your Pet?
+                    //--MARK V - Time of day you will walk your Pet?
+                    //--MARK VI - Set a bedtime for Pet
+                    //--MARK VII - Program settings saved  - Run Program!
+                    //--MARK VIII - Continue program or Exit
 
                 }
                 else if (yesno.ToLower() == "no")
