@@ -15,3 +15,8 @@ try{} catch(){} statement
 
 ### Man's Best Friend
 Started new project 12 - 09 - 2016
+
+
+### Interfaces 101
+Started new project 12 - 18 - 2016
+Interfaces provide the rules for how methods and properties are to behave!
