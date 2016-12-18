@@ -10,6 +10,9 @@ namespace Interfaces_101
     {
         static void Main(string[] args)
         {
+            /*  Noel Mowatt, Jr.
+                Learning implementation of Interface
+                Sunday, 12 - 18 - 2016*/
         }
     }
 }
