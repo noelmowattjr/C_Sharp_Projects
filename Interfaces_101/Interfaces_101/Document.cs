@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace Interfaces_101
 {
+    //--Interface--//
+    interface IStorable
+    {
+        void Save();
+        void Load();
+        Boolean NeedsSave { get; set; }
+    }
+
     class Document
     {
         private string name;
