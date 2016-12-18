@@ -18,3 +18,5 @@ Sunday, 12-18-2016
 	-Introduced in C# 2.0
 	-Type safety, reuse ability, and efficiency
 	-Commonly used with data collections
+
+-Today I learned how to construct and implement an Interface in C#. Interfaces are by default public, they cannot contain variables nor code logic; instead only methods and properties. In summation Interfaces serve as the behavior standard on how the classes who inherit it should behave.
