@@ -14,15 +14,34 @@ namespace Interfaces_101
         Boolean NeedsSave { get; set; }
     }
 
-    class Document
+    class Document : IStorable
     {
         private string name;
+        private Boolean mNeedsSave = false;
 
         //--Constructor
         public Document(string s)
         {
             name = s;
             Console.WriteLine("Created a document with name '{0}'", s);
+        }
+
+        //--Save and Load Methods
+        public void Save()
+        {
+            Console.WriteLine("Saving the Document");
+        }
+
+        public void Load()
+        {
+            Console.WriteLine("Loading the Document");
+        }
+
+        //----Getter and Setter for NeedsSave
+        public Boolean NeedsSave
+        {
+            get { return mNeedsSave; }
+            set { mNeedsSave = value; }
         }
     }
 }
