@@ -17,6 +17,10 @@ namespace Interfaces_101
             //--Instance of Document class
             Document document = new Document("Test Document");
 
+            document.Save();    //--Exercising the Save method
+            document.Load();    //--Exercising the Load method
+            document.NeedsSave = false;     //--Exercising the NeedsSave property
+
             Console.WriteLine("\r\nPress enter to continue...");
             Console.ReadLine();
         }
