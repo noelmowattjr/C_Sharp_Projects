@@ -16,11 +16,18 @@ namespace Interfaces_101
 
             //--Instance of Document class
             Document document = new Document("Test Document");
-            int one = 1;
+
+            //--Instantiate methods
+            document.Save();
+            document.Load();
+            document.Encrypt();
+            document.Decrypt();
+            document.NeedsSave = false;
             
             //-----------------------------------------------------------------//
             //--Using the 'is' operator to test if document is IStorable
-            if (one is IStorable)
+            /*
+             * if (document is IStorable)
             {
                 document.Save();
             }
@@ -35,17 +42,7 @@ namespace Interfaces_101
             {
                 document.Load();
             }
-
-            //--Cast 3 more example
-            IStorable doc1 = document as IStorable;
-            IStorable doc2 = document as IStorable;
-            IStorable doc3 = document as IStorable;
-
-            if (doc1 != null)
-            {
-                document.Load();
-            }
-
+            */
             //-----------------------------------------------------------------//
 
             Console.WriteLine("\r\nPress enter to continue...");
