@@ -16,10 +16,21 @@ namespace Interfaces_101
 
             //--Instance of Document class
             Document document = new Document("Test Document");
+            
+            //-----------------------------------------------------------------//
+            //--Using the 'is' operator to test if document is IStorable
+            if (document is IStorable)
+            {
+                document.Save();
+            }
 
-            document.Save();    //--Exercising the Save method
-            document.Load();    //--Exercising the Load method
-            document.NeedsSave = false;     //--Exercising the NeedsSave property
+            //--Using the 'as' operator to cast
+            IStorable intStore = document as IStorable;
+            if (intStore != null)
+            {
+                document.Load();
+            }
+            //-----------------------------------------------------------------//
 
             Console.WriteLine("\r\nPress enter to continue...");
             Console.ReadLine();
