@@ -30,6 +30,18 @@ namespace Interfaces_101
             {
                 document.Load();
             }
+
+            //--Cast 3 more example
+            IStorable doc1 = document as IStorable;
+            IStorable doc2 = document as IStorable;
+            IStorable doc3 = document as IStorable;
+
+            if (doc1 != null)
+            {
+                document.Load();
+                Console.WriteLine("document 1 is Loading");
+            }
+
             //-----------------------------------------------------------------//
 
             Console.WriteLine("\r\nPress enter to continue...");
