@@ -25,3 +25,5 @@ Tuesday, 12-20-2016
 	Using the ‘is’ and ‘as’ operators
 	-We can determine if an object implements a particular interface and call the 		methods appropriately.
 
+	-Today I learned that a class can implement more than one Interface, even multiple 	Interfaces.
+	**Pickup at Using Explicit Interface Implementation**
