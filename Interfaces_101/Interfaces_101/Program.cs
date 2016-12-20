@@ -16,12 +16,17 @@ namespace Interfaces_101
 
             //--Instance of Document class
             Document document = new Document("Test Document");
+            int one = 1;
             
             //-----------------------------------------------------------------//
             //--Using the 'is' operator to test if document is IStorable
-            if (document is IStorable)
+            if (one is IStorable)
             {
                 document.Save();
+            }
+            else
+            {
+                Console.WriteLine("Not IStorable!");
             }
 
             //--Using the 'as' operator to cast
@@ -39,7 +44,6 @@ namespace Interfaces_101
             if (doc1 != null)
             {
                 document.Load();
-                Console.WriteLine("document 1 is Loading");
             }
 
             //-----------------------------------------------------------------//
