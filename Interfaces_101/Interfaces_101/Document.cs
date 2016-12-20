@@ -14,7 +14,14 @@ namespace Interfaces_101
         Boolean NeedsSave { get; set; }
     }
 
-    class Document : IStorable
+    //--Interface for Encrypt
+    interface IEncryptable
+    {
+        void Encrypt();
+        void Decrypt();
+    }
+
+    class Document : IStorable, IEncryptable
     {
         private string name;
         private Boolean mNeedsSave = false;
@@ -42,6 +49,17 @@ namespace Interfaces_101
         {
             get { return mNeedsSave; }
             set { mNeedsSave = value; }
+        }
+
+        //-----Encrypt Methods-------------//
+        public void Encrypt()
+        {
+            Console.WriteLine("Encrypting the document");
+        }
+
+        public void Decrypt()
+        {
+            Console.WriteLine("Decrypting the document");
         }
     }
 }
