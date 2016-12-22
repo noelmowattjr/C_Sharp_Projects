@@ -18,10 +18,10 @@ namespace Interfaces_101
             FooBar fb = new FooBar();
             fb.SomeMethod();    //--Called the SomeMethod that belongs to FooBar class
 
-            IFoo ifoo = fb as IFoo;     //--Cast Interface (iFoo)ifoo as a class like fb(FooBar)
+            IFoo ifoo = fb as IFoo;     //--Cast to the IFoo interface
             ifoo.SomeMethod();       //--Call the SomeMethod that belongs to the IFoo Interface
 
-            IBar ibar = fb as IBar;     //--Cast Interface (IBar)ibar as a class like fb(FooBar)
+            IBar ibar = fb as IBar;     //--Cast to the IBar interface
             ibar.SomeMethod();      //--Call the SomeMethod that belongs to the IBar Interface
             ///////////////////////////////////////////////////////////
             /*
