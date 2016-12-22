@@ -16,6 +16,7 @@ namespace Interfaces_101
 
 
             FooBar fb = new FooBar();
+            fb.SomeMethod();    //--Called the SomeMethod that belongs to FooBar class
             ///////////////////////////////////////////////////////////
             /*
             //--Instance of Document class
