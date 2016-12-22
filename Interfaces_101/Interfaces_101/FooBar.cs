@@ -25,5 +25,15 @@ namespace Interfaces_101
         {
             Console.WriteLine("This is the class method!");
         }
+
+        void IFoo.SomeMethod()
+        {
+            Console.WriteLine("This is IFoo's SomeMethod");
+        }
+
+        void IBar.SomeMethod()
+        {
+            Console.WriteLine("This is IBar's SomeMethod");
+        }
     }
 }
