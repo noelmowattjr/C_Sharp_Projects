@@ -26,4 +26,8 @@ Tuesday, 12-20-2016
 	-We can determine if an object implements a particular interface and call the 		methods appropriately.
 
 	-Today I learned that a class can implement more than one Interface, even multiple 	Interfaces.
-	**Pickup at Using Explicit Interface Implementation**
+	
+Thursday, 12-22-2016
+	Explicit Interfaces
+	-what happens when 2 separate interfaces define the same method?
+	 To solve this problem, we will use something called explicit Interface 		  implementation
