@@ -14,6 +14,10 @@ namespace Interfaces_101
                 Learning implementation of Interface
                 Sunday, 12 - 18 - 2016*/
 
+
+            FooBar fb = new FooBar();
+            ///////////////////////////////////////////////////////////
+            /*
             //--Instance of Document class
             Document document = new Document("Test Document");
 
@@ -26,7 +30,7 @@ namespace Interfaces_101
             
             //-----------------------------------------------------------------//
             //--Using the 'is' operator to test if document is IStorable
-            /*
+            
              * if (document is IStorable)
             {
                 document.Save();
