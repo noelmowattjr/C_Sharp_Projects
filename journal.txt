@@ -33,4 +33,8 @@ Thursday, 12-22-2016
 	 To solve this problem, we will use something called explicit Interface 		  implementation
 
 	-Today I learned about explicit interfaces - basically how to use interfaces that 	define the same method.
-	**Pickup at - Explicit Interfaces 01:39 in video**
+
+Today, 12-23-2016
+	Built-In .NET Interfaces
+	
+	
