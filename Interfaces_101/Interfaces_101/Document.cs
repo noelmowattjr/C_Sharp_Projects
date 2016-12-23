@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//--Include the namespace that contains INotifyPropertyChanged
+using System.ComponentModel;    //--gives me access to the INotifyPropertyChanged nterface
 
 namespace Interfaces_101
 {
@@ -26,6 +28,16 @@ namespace Interfaces_101
         private string name;
         private Boolean mNeedsSave = false;
 
+        //--------------------------.NET Interface Lesson-----------------------------------//
+        // INotifyPropertyChanged requires the implementation of 1 event
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        // Utility function to call the PropertyChanged event
+        private void NotifyPropChanged(string propName)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
+        //--------------------------------------------------------------------------------------------------//
         //--Constructor
         public Document(string s)
         {
